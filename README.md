@@ -35,7 +35,7 @@ An interactive comments web app built with React, featuring full CRUD functional
 
 ### Links
 
-* Repository: [\[Add GitHub repo link here\]](https://github.com/silaskad/reactive-comments)
+* Repository: [https://github.com/silaskad/reactive-comments]
 
 ## My process
 
