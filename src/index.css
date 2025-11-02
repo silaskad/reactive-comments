@@ -1,0 +1,63 @@
+:root {
+  --clr-primary-purple600: hsl(238, 40%, 52%);
+  --clr-primary-purple200: hsl(239, 57%, 85%);
+  --clr-primary-pink400: hsl(358, 79%, 66%);
+  --clr-primary-pink200: hsl(357, 100%, 86%);
+
+  --clr-neutral-gray800: hsl(212, 24%, 26%);
+  --clr-neutral-gray500: hsl(211, 10%, 45%);
+  --clr-neutral-gray100: hsl(223, 19%, 93%);
+  --clr-neutral-gray50: hsl(228, 33%, 97%);
+  --clr-white: hsl(0, 100%, 100%);
+
+  --ff: "Rubik", sans-serif;
+}
+
+/* Resets */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/* General styles */
+body {
+  line-height: 1.5;
+  font-family: var(--ff);
+  font-weight: 400;
+  font-size: 1rem;
+  color: var(--clr-neutral-gray500);
+  background: var(--clr-neutral-gray50);
+}
+
+body.scroll_lock {
+  overflow: hidden;
+}
+
+.modal_backdrop {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  inset: 0;
+  z-index: 11;
+  pointer-events: none;
+  backdrop-filter: blur(2px);
+}
